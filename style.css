@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    margin-left: 40rem;
+}
+
+.gambarUtama {
+    margin-top: 6rem;
+    border-radius: 20px;
+}
+
+#dimensiKiri {
+    position: relative;
+}
+
+#banner::before {
+    position: absolute;
+    content: "";
+    height: 500px;
+    width: 550px;
+    border-radius: 50%;
+    left: -12%;
+    top: 20%;
+    background-color: crimson;
+    background: linear-gradient(to top right, crimson, #e89b9b);
+    animation: bunder 4s linear infinite;
+}
+
+#banner::after {
+    position: absolute;
+    content: "";
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    left: 35%;
+    top: 5%;
+    background: linear-gradient(crimson, #e89b9b);
+    animation: bunder2 4s linear infinite;
+}
+
+@keyframes bunder {
+    50% {
+        left: -8%;
+        top: 17%;
+    }
+}
+
+@keyframes bunder2 {
+    50% {
+        left: 34%;
+        top: 10%;
+    }
+}
+
+.kontener {
+    /* margin-top: 10rem;
+    padding-top: 8rem; */
+    width: 200%;
+    height: 100vh;
+    display: flex;
+}
+
+.bunder {
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to top left, crimson, #e89b9b);
+    animation: bunder3 4s linear infinite;
+}
+
+@keyframes bunder3 {
+    50% {
+        top: 57%;
+        left: -3%;
+    }
+}
+
+.galeri {
+    width: 80%;
+    columns: 3;
+    column-gap: 10px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+.galeri .box {
+    width: 100%;
+    margin-bottom: 25px;
+    break-inside: avoid;
+    margin-left: 10px;
+}
+
+.galeri .box img {
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.galeri .box img:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+#panel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 12rem;
+}
+
+.footer {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.footer p {
+    padding: 30px;
+    width: 100%;
+    background-color: crimson;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
